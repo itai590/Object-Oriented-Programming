@@ -3,6 +3,6 @@ SE freshman second semester course.
 
 The repository (will) include:
 
-* 6 class work
+* 6 classwork.
 * 4 home assignments.
 * final exam.
