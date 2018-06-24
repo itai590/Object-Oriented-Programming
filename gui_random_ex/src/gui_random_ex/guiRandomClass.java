@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 //for each button you need a stage
 //stage > scene > container > node
 public class guiRandomClass extends Application {
+	Stage window;
 	private TextField textField = new TextField();
 	private final int N = 10;
 	private int guessCount = 0;
@@ -37,14 +38,15 @@ public class guiRandomClass extends Application {
 		textField.setMaxSize(100, 20);
 		label1.setText("Insert Number:");
 		label2.setText("\nTry " + (guessCount + 1) + "/" + N);
-		label4.setText("  Welcome to the right guess game! \nYou need to guess the number (0 to "+N+").\nYou have 10 Attempts for that.");
+		label4.setText("  Welcome to the right guess game! \nYou need to guess the number (0 to " + N
+				+ ").\nYou have 10 Attempts for that.");
 		BorderPane bp = new BorderPane();
 		VBox vb2 = new VBox(); // just to center lable2
 		StackPane sp3 = new StackPane(); // just to center lable3
 		StackPane sp4 = new StackPane(); // just to center textField
 		bp.setPadding(new Insets(10, 10, 10, 10));
 		bp.setLeft(label1);
-		vb2.getChildren().addAll(label4,label2);
+		vb2.getChildren().addAll(label4, label2);
 		vb2.setAlignment(Pos.TOP_CENTER);
 		bp.setTop(vb2);
 		sp3.getChildren().add(label3);
@@ -55,10 +57,11 @@ public class guiRandomClass extends Application {
 		bp.setRight(checkBt);
 		bp.setBottom(sp3);
 		Scene scene = new Scene(bp, 315, 165);
-		primaryStage.setTitle("GUI Random Guess"); // Set the stage title
-		primaryStage.setScene(scene); // Place the scene in the stage
-		primaryStage.show(); // Display the stage
-		primaryStage.setAlwaysOnTop(true);
+		window = primaryStage;
+		window.setTitle("GUI Random Guess"); // Set the stage title
+		window.setScene(scene); // Place the scene in the stage
+		window.show(); // Display the stage
+		window.setAlwaysOnTop(true);
 		checkBt.setOnAction(e -> guessCheck());
 		checkBt.defaultButtonProperty();
 		checkBt.setDefaultButton(true);
@@ -73,7 +76,10 @@ public class guiRandomClass extends Application {
 			if (userGuess == randomNumber) {
 				label3.setText("Bingo! \nProgram finished");
 				checkBt.setText("Close");
-				checkBt.setOnAction(e -> System.exit(0));
+				checkBt.setOnAction(e -> {
+					window.close();
+					// System.exit(0);
+				});
 			}
 			guessCount++;
 			textField.clear();
@@ -86,7 +92,10 @@ public class guiRandomClass extends Application {
 				label3.setText("The number is:" + randomNumber + "\nProgram finished");
 				textField.backward();
 				checkBt.setText("Close");
-				checkBt.setOnAction(e -> System.exit(0));
+				checkBt.setOnAction(e -> {
+					window.close();
+					//System.exit(0);
+				});
 			}
 		} catch (NumberFormatException ex) {
 			label3.setText("Invalid input, please try again");
