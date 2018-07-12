@@ -12,7 +12,7 @@ The repository (will) include:
 
 * 3 home assignments:
   - [x] ab_HW1 - Object oriented musical instruments store.
-  - [x] ab_HW2 - Inventorty functionality added as generic inteface class with methods.
+  - [x] ab_HW2 - Inventorty functionality added as generic inteface class with the relevant methods.
   - [x] ab_HW3 - Awesome GUI for this great store.
    
 
