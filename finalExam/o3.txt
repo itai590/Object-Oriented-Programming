@@ -1,0 +1,8 @@
+sorted integers array
+ -5 0 1 2 3 4 4 6 601 700 800 800
+sorted doubles array
+ -6.06 1.0 2.1 3.2 4.1 4.4
+sorted circles array
+ Radius=2.0 Color=Black Date created=Mon Jul 16 18:18:54 IDT 2018
+ Radius=2.8868097505514703 Color=Yellow Date created=Mon Jul 16 18:18:54 IDT 2018
+ Radius=3.0 Color=Black Date created=Mon Jul 16 18:18:54 IDT 2018
