@@ -16,4 +16,4 @@ The repository (will) include:
   - [x] ab_HW3 - Awesome GUI for this great store.
    
 
-* [ ] final exam.
+* [x] final exam.
