@@ -1,5 +1,5 @@
 # Object Oriented Programming (Java)
-SE freshman second semester course.
+Foundations of Object Oriented Programming Using Java. 
 
 The repository (will) include:
 
