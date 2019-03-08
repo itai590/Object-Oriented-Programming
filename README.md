@@ -1,7 +1,12 @@
 # Object Oriented Programming (Java)
-Foundations of Object Oriented Programming Using Java. 
+Foundations of Object Oriented Programming Using Java.
 
-The repository (will) include:
+UML, Inheritance and Polymorphism, Exception Handling, Abstract Classes and
+Interfaces, Generic, Gui, Event Driven Programming and Lambda Calculus.
+Testing (Junit).
+
+
+The repository include:
 
 * 3 classwork:
   - [x] 1 inheritance and polymorphism	Add files via upload	2 months ago
